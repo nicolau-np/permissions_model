@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class PermissaoSeeder extends Seeder
 {
@@ -27,6 +28,10 @@ class PermissaoSeeder extends Seeder
 
     public function run()
     {
-        //
+        foreach(Self::$permissaos as $permissao){
+            DB::table('permissaos')->insert(
+                $permissao
+            );
+        }
     }
 }
