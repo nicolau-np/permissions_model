@@ -23,7 +23,7 @@ class PrivilegioUser extends Model
         return $this->belongsTo(Permissao::class, 'id_permissao', 'id');
     }
 
-    public function usuario(){
+    public function usuarios(){
         return $this->belongsTo(User::class, 'id_usuario', 'id');
     }
 }
