@@ -9,6 +9,22 @@ class PermissaoSeeder extends Seeder
      *
      * @return void
      */
+    static $permissaos = [
+        [
+            'permissao'=>"Leitura",
+            'estado' =>"on",
+        ],[
+            'permissao'=>"Criar",
+            'estado' =>"on",
+        ],[
+            'permissao'=>"Editar",
+            'estado' =>"on",
+        ],[
+            'permissao'=>"Eliminar",
+            'estado' =>"on",
+        ],
+    ];
+
     public function run()
     {
         //

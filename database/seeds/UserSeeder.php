@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
             ),
             array(
                 'id_pessoa'=>2,
-                'email'=>"armindadorescatotak@gmail.com",
+                'email'=>"armindadorescatota@gmail.com",
                 'password' =>Hash::make('dorescatota'),
                 'estado' =>"on",
             ),
