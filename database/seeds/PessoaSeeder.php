@@ -24,7 +24,7 @@ class PessoaSeeder extends Seeder
     public function run()
     {
         foreach (Self::$pessoas as $pessoa) {
-            DB::table('pessoa')->insert(
+            DB::table('pessoas')->insert(
                 $pessoa
             );
         }
