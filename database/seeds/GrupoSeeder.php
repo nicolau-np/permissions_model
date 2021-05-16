@@ -13,13 +13,13 @@ class GrupoSeeder extends Seeder
 
     static $grupos = [
         [
-            'grupos' =>"R.H",
+            'grupo' =>"R.H",
             'estado'=>"on",
         ],[
-            'grupos' =>"Secretaria",
+            'grupo' =>"Secretaria",
             'estado'=>"on",
         ],[
-            'grupos' =>"Administrador",
+            'grupo' =>"Administrador",
             'estado'=>"on",
         ],
     ];
