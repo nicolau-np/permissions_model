@@ -9,7 +9,7 @@ class Permissao extends Model
     protected $table = "permissaos";
 
     protected $fillable=[
-        'permisao',
+        'permissao',
          'estado',
     ];
 
