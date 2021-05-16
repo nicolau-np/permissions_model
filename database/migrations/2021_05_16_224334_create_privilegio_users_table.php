@@ -23,9 +23,9 @@ class CreatePrivilegioUsersTable extends Migration
         });
 
         Schema::table('privilegio_users', function (Blueprint $table) {
-            $table->foreign('id_usuario')->reference('id')->on('usuarios')->onUpdate('cascade');
-            $table->foreign('id_permissao')->reference('id')->on('permissaos')->onUpdate('cascade');
-            $table->foreign('id_grupo')->reference('id')->on('grupos')->onUpdate('cascade');
+            $table->foreign('id_usuario')->references('id')->on('usuarios')->onUpdate('cascade');
+            $table->foreign('id_permissao')->references('id')->on('permissaos')->onUpdate('cascade');
+            $table->foreign('id_grupo')->references('id')->on('grupos')->onUpdate('cascade');
         });
     }
 

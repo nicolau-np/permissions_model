@@ -21,7 +21,7 @@ class CreateUsuariosTable extends Migration
         });
 
         Schema::table('usuarios', function (Blueprint $table) {
-            $table->foreign('id_pessoa')->reference('id')->on('pessoas')->onUpdate('cascade');
+            $table->foreign('id_pessoa')->references('id')->on('pessoas')->onUpdate('cascade');
         });
     }
 
