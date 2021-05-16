@@ -15,8 +15,11 @@ class User extends Authenticatable
      *
      * @var array
      */
+
+    protected $table = "usuarios";
+
     protected $fillable = [
-        'name', 'email', 'password',
+        'id_pessoa', 'email', 'password', 'estado',
     ];
 
     /**
@@ -36,4 +39,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function privilegio_users(){
+        return $this->hasMany(PrivilegioUser::class, 'id_usuario', 'id');
+    }
+
+    public function pessoa(){
+        return $this->belongsTo(Pessoa::class, 'id_pessoa', 'id');
+    }
 }
