@@ -37,5 +37,8 @@ Route::group(['prefix' =>"secretaria", 'middleware'=>"auth"], function(){
 });
 
 Route::group(['prefix' =>"recursos", 'middleware'=>"auth"], function(){
-
+    Route::get('/', "RecursoController@index");
+    Route::get('/create', "RecursoController@create");
+    Route::get('/edit/{id}', "RecursoController@edit");
+    Route::get('/delete/{id}', "RecursoController@destroy");
 });
