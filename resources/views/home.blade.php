@@ -82,7 +82,7 @@
                     <a href="/administrador">Admin</a>
                     <a href="/recursos">R.H</a>
                     <a href="/secretaria">Secretaria</a>
-                    <a href="/sobre">Sobre</a>
+                    <a href="/admin/sobre">Sobre</a>
                 </div>
             </div>
         </div>

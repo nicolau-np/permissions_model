@@ -18,11 +18,12 @@ Route::get('/logout', "UserController@logout")->name('logout');
 Route::post('/logar', "UserController@logar")->name('logar');
 Route::group(['prefix' => "admin", 'middleware' => "auth"], function () {
     Route::get('/perfil', "UserController@perfil")->name('perfil');
-    Route::get('home', "HomeController@index")->name('home');
+    Route::get('/home', "HomeController@index")->name('home');
+    Route::get('/sobre', "HomeController@sobre")->name('sobre');
 });
 
 Route::group(['prefix' =>'administrador', 'middleware'=>"auth"], function(){
-
+    
 });
 
 Route::group(['prefix' =>"secretaria", 'middleware'=>"auth"], function(){
@@ -30,5 +31,5 @@ Route::group(['prefix' =>"secretaria", 'middleware'=>"auth"], function(){
 });
 
 Route::group(['prefix' =>"recursos", 'middleware'=>"auth"], function(){
-    
+
 });
