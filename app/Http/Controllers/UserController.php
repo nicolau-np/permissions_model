@@ -12,9 +12,7 @@ class UserController extends Controller
     {
         $data = [
             'title' => "Iniciar Sessão",
-            'type' => "login",
-            'menu' => "Login",
-            'submenu' => "",
+            'menu' => "login",
         ];
 
         return view('user.login', $data);
@@ -51,9 +49,7 @@ class UserController extends Controller
         }
         $data = [
             'title' => "Perfil",
-            'type' => "perfil",
-            'menu' => "Perfil",
-            'submenu' => "Editar",
+            'menu' => "perfil",
         ];
 
         return view('user.perfil', $data);
