@@ -1,21 +1,21 @@
 fieldset {
     background-color: #fff;
-    border: gray;
-
+    border: 1px solid gray;
   }
+
+
 
   legend {
     background-color: gray;
     color: white;
     padding: 5px 10px;
     font-size: 20px;
-    border: #333;
+
     width: 50%;
   }
 
   fieldset .row{
     padding: 15px;
-    border: #333;
   }
 
   .form_login{
