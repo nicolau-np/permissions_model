@@ -13,7 +13,12 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return "ADIMINISTRADOR Listagem";
+        $data = [
+            'title'=>"Administrador",
+            'menu'=>"Listagem",
+        ];
+
+        return view('administrador.list', $data);
     }
 
     /**
@@ -23,7 +28,12 @@ class AdminController extends Controller
      */
     public function create()
     {
-        return "ADIMINISTRADOR Criaçao";
+        $data = [
+            'title'=>"Administrador",
+            'menu'=>"Criação",
+        ];
+
+        return view('administrador.create', $data);
     }
 
 
@@ -36,7 +46,12 @@ class AdminController extends Controller
      */
     public function edit($id)
     {
-        return "ADIMINISTRADOR Edição";
+        $data = [
+            'title'=>"Administrador",
+            'menu'=>"Edição",
+        ];
+
+        return view('administrador.create', $data);
     }
 
 
