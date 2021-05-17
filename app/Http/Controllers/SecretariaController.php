@@ -13,7 +13,7 @@ class SecretariaController extends Controller
      */
     public function index()
     {
-        return "Listagem";
+        return "SECRETARIA Listagem";
     }
 
     /**
@@ -23,7 +23,7 @@ class SecretariaController extends Controller
      */
     public function create()
     {
-        return "Criaçao";
+        return "SECRETARIA Criaçao";
     }
 
 
@@ -36,7 +36,7 @@ class SecretariaController extends Controller
      */
     public function edit($id)
     {
-        return "Edição";
+        return "SECRETARIA Edição";
     }
 
 
@@ -49,6 +49,6 @@ class SecretariaController extends Controller
      */
     public function destroy($id)
     {
-        return "Deletar";
+        return "SECRETARIA Deletar";
     }
 }
