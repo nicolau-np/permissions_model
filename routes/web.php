@@ -30,7 +30,10 @@ Route::group(['prefix' =>'administrador', 'middleware'=>"auth"], function(){
 });
 
 Route::group(['prefix' =>"secretaria", 'middleware'=>"auth"], function(){
-
+    Route::get('/', "SecretariaController@index");
+    Route::get('/create', "SecretariaController@create");
+    Route::get('/edit/{id}', "SecretariaController@edit");
+    Route::get('/delete/{id}', "SecretariaController@destroy");
 });
 
 Route::group(['prefix' =>"recursos", 'middleware'=>"auth"], function(){
