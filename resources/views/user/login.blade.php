@@ -1,5 +1,6 @@
 @extends('layout.app')
 @section('content')
+
 <div class="form_login">
     @if (session('error'))
     <div class="alert bg-danger" role="alert"><em class="fa fa-lg fa-warning">&nbsp;</em> {{__(session('error'))}} <a href="#" class="pull-right"><em class="fa fa-lg fa-close"></em></a></div>
