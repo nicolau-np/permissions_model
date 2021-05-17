@@ -13,7 +13,7 @@ class RecursoController extends Controller
      */
     public function index()
     {
-        return "Listagem";
+        return "R.H Listagem";
     }
 
     /**
@@ -23,7 +23,7 @@ class RecursoController extends Controller
      */
     public function create()
     {
-        return "Criaçao";
+        return "R.H Criaçao";
     }
 
 
@@ -36,7 +36,7 @@ class RecursoController extends Controller
      */
     public function edit($id)
     {
-        return "Edição";
+        return "R.H Edição";
     }
 
 
@@ -49,6 +49,6 @@ class RecursoController extends Controller
      */
     public function destroy($id)
     {
-        return "Deletar";
+        return "R.H Deletar";
     }
 }
