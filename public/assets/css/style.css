@@ -1,5 +1,6 @@
 fieldset {
-    background-color: #eeeeee;
+    background-color: #fff;
+    border: gray;
 
   }
 
@@ -8,10 +9,13 @@ fieldset {
     color: white;
     padding: 5px 10px;
     font-size: 20px;
+    border: #333;
+    width: 50%;
   }
 
   fieldset .row{
     padding: 15px;
+    border: #333;
   }
 
   .form_login{
