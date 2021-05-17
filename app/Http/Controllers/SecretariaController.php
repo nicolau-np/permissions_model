@@ -13,7 +13,12 @@ class SecretariaController extends Controller
      */
     public function index()
     {
-        return "SECRETARIA Listagem";
+        $data = [
+            'title'=>"Secretaria",
+            'menu'=>"Listagem",
+        ];
+
+        return view('secretaria.list', $data);
     }
 
     /**
@@ -23,7 +28,12 @@ class SecretariaController extends Controller
      */
     public function create()
     {
-        return "SECRETARIA Criaçao";
+        $data = [
+            'title'=>"Secretaria",
+            'menu'=>"Criação",
+        ];
+
+        return view('secretaria.create', $data);
     }
 
 
@@ -36,7 +46,12 @@ class SecretariaController extends Controller
      */
     public function edit($id)
     {
-        return "SECRETARIA Edição";
+        $data = [
+            'title'=>"Secretaria",
+            'menu'=>"Edição",
+        ];
+
+        return view('secretaria.edit', $data);
     }
 
 
