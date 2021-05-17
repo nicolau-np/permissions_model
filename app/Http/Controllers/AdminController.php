@@ -13,7 +13,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return "Listagem";
+        return "ADIMINISTRADOR Listagem";
     }
 
     /**
@@ -23,7 +23,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        return "Criaçao";
+        return "ADIMINISTRADOR Criaçao";
     }
 
 
@@ -36,7 +36,7 @@ class AdminController extends Controller
      */
     public function edit($id)
     {
-        return "Edição";
+        return "ADIMINISTRADOR Edição";
     }
 
 
@@ -49,6 +49,6 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        return "Deletar";
+        return "ADIMINISTRADOR Deletar";
     }
 }
