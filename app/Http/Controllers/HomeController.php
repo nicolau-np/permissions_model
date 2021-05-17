@@ -15,6 +15,10 @@ class HomeController extends Controller
     }
 
     public function sobre(){
-        return view('sobre');
+        $data = [
+            'title'=>"Sobre",
+            'menu'=>"sobre",
+        ];
+        return view('sobre', $data);
     }
 }
