@@ -3,11 +3,11 @@
 
 <div class="form_login">
     @if (session('error'))
-    <div class="alert bg-danger" role="alert"><em class="fa fa-lg fa-warning">&nbsp;</em> {{__(session('error'))}} <a href="#" class="pull-right"><em class="fa fa-lg fa-close"></em></a></div>
+    <div class="alert bg-danger" role="alert" style="color:#fff;"><em class="fa fa-lg fa-warning">&nbsp;</em> {{__(session('error'))}} <a href="#" class="pull-right"><em class="fa fa-lg fa-close"></em></a></div>
     @endif
 
     @if (session('success'))
-    <div class="alert bg-success" role="alert"><em class="fa fa-lg fa-check">&nbsp;</em> {{session('success')}} <a href="#" class="pull-right"><em class="fa fa-lg fa-close"></em></a></div>
+    <div class="alert bg-success" role="alert" style="color:#fff;"><em class="fa fa-lg fa-check">&nbsp;</em> {{session('success')}} <a href="#" class="pull-right"><em class="fa fa-lg fa-close"></em></a></div>
      @endif
     {{Form::open(['method'=>"post", 'name'=>"formLogin", 'url'=>"/logar"])}}
 
