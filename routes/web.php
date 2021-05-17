@@ -23,7 +23,10 @@ Route::group(['prefix' => "admin", 'middleware' => "auth"], function () {
 });
 
 Route::group(['prefix' =>'administrador', 'middleware'=>"auth"], function(){
-    
+    Route::get('/', "AdminController@index");
+    Route::get('/create', "AdminController@create");
+    Route::get('/edit/{id}', "AdminController@edit");
+    Route::get('/delete/{id}', "AdminController@destroy");
 });
 
 Route::group(['prefix' =>"secretaria", 'middleware'=>"auth"], function(){
