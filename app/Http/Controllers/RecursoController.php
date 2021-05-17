@@ -13,7 +13,12 @@ class RecursoController extends Controller
      */
     public function index()
     {
-        return "R.H Listagem";
+        $data = [
+            'title'=>"R.H",
+            'menu'=>"Listagem",
+        ];
+
+        return view('recursos_humanos.list', $data);
     }
 
     /**
@@ -23,7 +28,12 @@ class RecursoController extends Controller
      */
     public function create()
     {
-        return "R.H Criaçao";
+        $data = [
+            'title'=>"R.H",
+            'menu'=>"Criação",
+        ];
+
+        return view('recursos_humanos.create', $data);
     }
 
 
@@ -36,7 +46,12 @@ class RecursoController extends Controller
      */
     public function edit($id)
     {
-        return "R.H Edição";
+        $data = [
+            'title'=>"R.H",
+            'menu'=>"Edição",
+        ];
+
+        return view('recursos_humanos.edit', $data);
     }
 
 
