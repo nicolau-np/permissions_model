@@ -42,7 +42,7 @@ class UserController extends Controller
         return redirect()->route('login');
     }
 
-    public function edit_profile()
+    public function perfil()
     {
         if (!Auth::check()) {
             return back()->with(['error' => "Deve fazer login"]);
