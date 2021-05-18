@@ -16,7 +16,7 @@ class Administrador
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::check() && Auth::user()->acesso == "formador"){
+        if(Auth::check() && Auth::user()->acesso == "Administrador"){
             return $next($request);
         }
         return redirect('/');
