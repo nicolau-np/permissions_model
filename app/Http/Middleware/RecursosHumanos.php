@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Support\Facades\Auth;
 
 class RecursosHumanos
 {
@@ -15,6 +16,9 @@ class RecursosHumanos
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+        if(Auth::check() && Auth::user()->acesso == "R.H"){
+            return $next($request);
+        }
+        return redirect('/');
     }
 }
