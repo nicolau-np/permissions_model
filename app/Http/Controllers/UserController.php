@@ -29,13 +29,11 @@ class UserController extends Controller
         );
 
         $credencials = $request->only('email', 'password');
-        /*if (Auth::attempt($credencials)) {
+        if (Auth::attempt($credencials)) {
             return redirect()->route('home');
         } else {
             return back()->with(['error' => "E-mail ou Palavra-Passe Incorrectos"]);
-        }*/
-
-        dd(Auth::attempt($credencials));
+        }
     }
 
     public function logout()
