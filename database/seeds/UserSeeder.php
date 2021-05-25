@@ -19,13 +19,13 @@ class UserSeeder extends Seeder
             array(
                 'id_pessoa'=>1,
                 'email'=>"nic340k@gmail.com",
-                'password' =>Hash::make('olasolas'),
+                'password' =>md5("olasolas"),
                 'estado' =>"on",
             ),
             array(
                 'id_pessoa'=>2,
                 'email'=>"armindadorescatota@gmail.com",
-                'password' =>Hash::make('dorescatota'),
+                'password' =>md5("dorescatota"),
                 'estado' =>"on",
             ),
         ]);
